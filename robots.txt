@@ -1,3 +1,11 @@
+# Blokir Google (crawler utama & gambar)
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+# Mesin pencari lain tetap diizinkan
 User-agent: *
 Allow: /
 
