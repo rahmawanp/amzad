@@ -1,12 +1,7 @@
-# Blokir Google (crawler utama & gambar)
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Googlebot-Image
-Disallow: /
-
-# Mesin pencari lain tetap diizinkan
+# Halaman boleh dirayapi agar Google dapat membaca tag noindex di index.html.
 User-agent: *
 Allow: /
 
-Sitemap: https://amzad.rimbaweb.com/sitemap.xml
+# Gambar tidak memakai tag meta, jadi diblokir langsung dari Google Images.
+User-agent: Googlebot-Image
+Disallow: /
